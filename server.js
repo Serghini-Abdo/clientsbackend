@@ -20,6 +20,8 @@ app.use(express.json());
 // Connect to MongoDB
 
 // Define routes here
+app.get("/", (req, res) => res.send("Express on Vercel"));
+
 app.use('/api/auth', authRouter);
 
 
